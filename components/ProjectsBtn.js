@@ -31,10 +31,10 @@ const ProjectsBtn = () => {
   const containerTransform = isHovered ? "scale(1.1)" : "scale(1.0)";
 
   return (
-    <div className="mx-auto xl:mx-0">
+    <div className="mx-auto xl:mx-0 xl:mt-[-5px]">
       <Link
         href={"/work"}
-        className={`relative w-[185px] h-[185px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat group`}
+        className={`relative w-[250px] h-[250px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat group`}
         style={{
           transform: containerTransform, // Aplica la transformación al contenedor
         }}
