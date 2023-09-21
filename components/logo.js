@@ -17,9 +17,9 @@ const Logo = () => {
 
   return (
      <div
-      className="logo-html gap-10"
+      className="logo-html"
       dangerouslySetInnerHTML={{ __html: logoHtml }}
-      style={{ width: '400px', height: '200px' }}
+      style={{ width: '300px', height: '100px' }}
       
      
     />
