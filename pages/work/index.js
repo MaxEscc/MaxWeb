@@ -3,90 +3,97 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const WorkSlider = () => {
-  // Datos de las diapositivas
-  const workSlides = {
-    slides: [
-      {
-        images: [
-          {
-            title: "Proyecto 1",
-            description: "Descripción del Proyecto 1",
-            path: "/thumb1.jpg",
-          },
-          {
-            title: "Proyecto 2",
-            description: "Descripción del Proyecto 2",
-            path: "/thumb2.jpg",
-          },
-          {
-            title: 'title',
-            path: '/thumb3.jpg',
-          },
-          {
-            title: 'title',
-            path: '/thumb4.jpg',
-          },
-          
-          // ... (otras imágenes de la diapositiva 1)
-        ],
-      },
-      {
-        images: [
-          {
-            title: "Proyecto 44",
-    description: "Descripción del Proyecto 5",
-    path: "/thumb4.jpg",
-    width: "500px", // Cambiar el ancho según tus preferencias
-    height: "300px"
-       
-          },
-         
-          // ... (otras imágenes de la diapositiva 2)
-        ],
-      },
-      // ... (puedes agregar más diapositivas aquí)
-    ],
-  };
+const workSlides = {
+  slides: [
+    {
+      images: [
+        {
+          title: "Proyecto 1",
+          description: "Descripción del Proyecto 1",
+          path: "/thumb1.jpg",
+        },
+        {
+          title: "Proyecto 2",
+          description: "Descripción del Proyecto 2",
+          path: "/thumb2.jpg",
+        },
+        {
+          title: "Proyecto 3",
+          description: "Descripción del Proyecto 3",
+          path: "/thumb3.jpg",
+        },
+        {
+          title: "Proyecto 4",
+          description: "Descripción del Proyecto 4",
+          path: "/thumb4.jpg",
+        },
+      ],
+    },
+    {
+      images: [
+        {
+          title: "Proyecto 5",
+          description: "Descripción del Proyecto 5",
+          path: "/thumb4.jpg",
+        },
+        {
+          title: "Proyecto 6",
+          description: "Descripción del Proyecto 6",
+          path: "/thumb1.jpg",
+        },
+        {
+          title: "Proyecto 7",
+          description: "Descripción del Proyecto 7",
+          path: "/thumb2.jpg",
+        },
+        {
+          title: "Proyecto 8",
+          description: "Descripción del Proyecto 8",
+          path: "/thumb3.jpg",
+        },
+      ],
+    },
+  ],
+};
 
-  // Configuración del carrusel de imágenes
+const WorkSlider = () => {
   const sliderSettings = {
     dots: true,
     speed: 500,
-    slidesToShow: 1, // Muestra solo un elemento a la vez
+    slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false, // Elimina las flechas de navegación
+    arrows: false,
   };
 
   return (
-    <div className=" min-h-screen flex items-center justify-center">
+    <div className="min-h-screen flex items-center justify-center">
       <div className="container mx-auto px-4">
         <Slider {...sliderSettings}>
           {workSlides.slides.map((slide, index) => (
             <div key={index}>
               <div className="flex flex-col md:flex-row items-center">
-                {/* Columna izquierda con título y descripción */}
-                <div className="md:w-4/5 text-center md:text-left mb-8 md:mb-0"> {/* Cambio de clase para aumentar el tamaño */}
-                  {/* Título y descripción del proyecto basado en la imagen actual */}
-                  <h3 className="text-3xl font-semibold mb-2">
+                <div className="md:w-4/5 text-center md:text-left mb-8 md:mb-0">
+                  <h3 className="text-3xl font-semibold mb-2 flex justify-center items-center">
                     {slide.images[0].title}
                   </h3>
-                  <p className="text-gray-600">{slide.images[0].description}</p>
+                  <p className="text-gray-600 flex justify-center items-center">
+                    {slide.images[0].description}
+                  </p>
                 </div>
-
-                {/* Columna derecha con las imágenes */}
-                <div className="">
-                  <div className="flex flex-wrap">
-                    {slide.images.map((image, imageIndex) => (
-                      <div key={imageIndex} className="w-1/2 p-2">
-                        <img
-                          src={image.path}
-                          alt={image.title}
-                          className=" rounded-lg" // Cambios: agrandar imágenes y redondear bordes
-                        />
-                      </div>
-                    ))}
-                  </div>
+                <div className="flex flex-wrap">
+                  {slide.images.map((image, imageIndex) => (
+                    <div
+                      key={imageIndex}
+                      className="w-1/2 p-2 transform hover:scale-105 transition-transform duration-300 ease-in-out"
+                    >
+                      <img
+                        src={image.path}
+                        alt={image.title}
+                        className="rounded-lg filter grayscale hover:filter-none"
+                        style={{ maxWidth: "100%", maxHeight: "300px" }}
+                      />
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
