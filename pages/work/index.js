@@ -2,6 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Image from 'next/image';
+
 
 const workSlides = {
   slides: [
@@ -10,22 +12,22 @@ const workSlides = {
         {
           title: "Proyecto 1",
           description: "Descripción del Proyecto 1",
-          path: "/thumb1.jpg",
+          path: "/thumb1.jpg", // Asegúrate de que las rutas sean correctas
         },
         {
           title: "Proyecto 2",
           description: "Descripción del Proyecto 2",
-          path: "/thumb2.jpg",
+          path: "/thumb2.jpg", // Asegúrate de que las rutas sean correctas
         },
         {
           title: "Proyecto 3",
           description: "Descripción del Proyecto 3",
-          path: "/thumb3.jpg",
+          path: "/thumb3.jpg", // Asegúrate de que las rutas sean correctas
         },
         {
           title: "Proyecto 4",
           description: "Descripción del Proyecto 4",
-          path: "/thumb4.jpg",
+          path: "/thumb4.jpg", // Asegúrate de que las rutas sean correctas
         },
       ],
     },
@@ -34,22 +36,22 @@ const workSlides = {
         {
           title: "Proyecto 5",
           description: "Descripción del Proyecto 5",
-          path: "/thumb4.jpg",
+          path: "/thumb4.jpg", // Asegúrate de que las rutas sean correctas
         },
         {
           title: "Proyecto 6",
           description: "Descripción del Proyecto 6",
-          path: "/thumb1.jpg",
+          path: "/thumb1.jpg", // Asegúrate de que las rutas sean correctas
         },
         {
           title: "Proyecto 7",
           description: "Descripción del Proyecto 7",
-          path: "/thumb2.jpg",
+          path: "/thumb2.jpg", // Asegúrate de que las rutas sean correctas
         },
         {
           title: "Proyecto 8",
           description: "Descripción del Proyecto 8",
-          path: "/thumb3.jpg",
+          path: "/thumb3.jpg", // Asegúrate de que las rutas sean correctas
         },
       ],
     },
@@ -86,7 +88,7 @@ const WorkSlider = () => {
                       key={imageIndex}
                       className="w-1/2 p-2 transform hover:scale-105 transition-transform duration-300 ease-in-out"
                     >
-                      <img
+                      <Image
                         src={image.path}
                         alt={image.title}
                         className="rounded-lg filter grayscale hover:filter-none"
