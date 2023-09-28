@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Image from 'next/image';
 
 
+
 const workSlides = {
   slides: [
     {
@@ -91,6 +92,8 @@ const WorkSlider = () => {
                       <Image
                         src={image.path}
                         alt={image.title}
+                        width={600} // Establece el ancho deseado para la imagen
+                        height={400} // Establece la altura deseada para la imagen
                         className="rounded-lg filter grayscale hover:filter-none"
                         style={{ maxWidth: "100%", maxHeight: "300px" }}
                       />

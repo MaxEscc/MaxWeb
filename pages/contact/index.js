@@ -1,46 +1,45 @@
 import React from 'react';
-import { BsArrowRight } from 'react-icons/bs';
-import { motion } from 'framer-motion';
-import { fadeIn } from '../../variants'; // Asegúrate de que esta importación sea correcta
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
-const Contact = () => {
+const SocialIcons = () => {
+
+  const boxShadowStyle = {
+    boxShadow: '2px 2px 10px rgb(205, 92, 92)', // Modificación para un sombreado más intenso
+  };
+  
+
   return (
-    <div className='h-full bg-primary/30'>
-      <div className='container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full'>
-        <div className='flex flex-col w-full max-w-[700px]'>
-          <motion.h2
-            variants={fadeIn('up', 0.2)} // Asegúrate de que las variantes estén definidas correctamente
-            initial='hidden'
-            animate='show'
-            exit='hidden'
-            className='h2 text-center mb-12'
-          >
-          Let&apos;s <span className='text-accent'>connect.</span>
-          </motion.h2>
-          <motion.form
-            variants={fadeIn('up', 0.4)} // Asegúrate de que las variantes estén definidas correctamente
-            initial='hidden'
-            animate='show'
-            exit='hidden'
-            className='flex-1 flex flex-col gap-6 w-full mx-auto'
-          >
-            <div className='flex gap-x-6 w-full'>
-              <input type='text' placeholder='name' className='input' />
-              <input type='text' placeholder='email' className='input' />
-            </div>
-            <input type='text' placeholder='subject' className='input' />
-            <textarea placeholder='message' className='textarea'></textarea>
-            <button className='btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group'>
-              <span className='group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500'>
-              Let&apos;s
-              </span>
-              <BsArrowRight className='translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]' />
-            </button>
-          </motion.form>
-        </div>
+    <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <div className="flex space-x-10">
+        <a
+          href="#"
+          className="w-24 h-24 rounded-full flex items-center justify-center text-[red] 
+          text-2.5xl transition duration-450 hover:text-black hover:border-red-500 
+          hover:bg-red-500"
+          style={{
+            WebkitBoxReflect:
+              ' below 5px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4))',
+            ...boxShadowStyle, // Aplicar el estilo de sombreado aquí
+          }}
+        >
+          
+          <FontAwesomeIcon icon={faLinkedin} size="2x" />
+        </a>
+        <a
+          href="#"
+          className="w-24 h-24 rounded-full border-2 border-white bg-white flex items-center justify-center text-[blue] text-2.5xl transition duration-300 hover:text-black hover:border-black hover:bg-black"
+          style={{
+            WebkitBoxReflect:
+              'below 5px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4))',
+            ...boxShadowStyle, // Aplicar el estilo de sombreado aquí
+          }}
+        >
+          <FontAwesomeIcon icon={faInstagram} size="2x" />
+        </a>
       </div>
     </div>
   );
 };
 
-export default Contact;
+export default SocialIcons;
