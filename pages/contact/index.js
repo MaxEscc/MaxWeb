@@ -51,7 +51,7 @@ const SocialIcons = () => {
     <div className="flex flex-wrap justify-center  space-x-4 md:space-x-10 mb-20 md:mb-0">
       <a
         href="#"
-        className="w-36 h-36 rounded-full flex items-center justify-center text-[#0066c8] 
+        className="w-28 h-28 md:w-36 md:h-36 rounded-full flex items-center justify-center text-[#0066c8] 
         text-2.5xl transition duration-450 hover:text-black 
         hover:bg-[#0066c8]"
         style={{
@@ -65,7 +65,7 @@ const SocialIcons = () => {
       </a>
       <a
         href="#"
-        className=" w-36 h-36 rounded-full flex items-center justify-center text-[#36bb22] 
+        className=" w-28 h-28 md:w-36 md:h-36 rounded-full flex items-center justify-center text-[#36bb22] 
         text-2.5xl transition duration-450 hover:text-black 
         hover:bg-[#36bb22]"
         style={{
@@ -79,7 +79,7 @@ const SocialIcons = () => {
       </a>
       <a
         href="#"
-        className="w-36 h-36 rounded-full flex items-center justify-center text-[#000] 
+        className="w-28 h-28 md:w-36 md:h-36 rounded-full flex items-center justify-center text-[#000] 
         text-2.5xl transition duration-450 hover:text-black 
         hover:bg-[#FFFF] md:mt-0 mt-36"
         style={{
@@ -93,7 +93,7 @@ const SocialIcons = () => {
       </a>
       <a
         href="#"
-        className="w-36 h-36 rounded-full flex items-center justify-center text-[#c03929] 
+        className="w-28 h-28 md:w-36 md:h-36 rounded-full flex items-center justify-center text-[#c03929] 
         text-2.5xl transition duration-450 hover:text-black 
         hover:bg-[#c03929] relative md:mt-0 mt-36"
         style={{
@@ -103,7 +103,7 @@ const SocialIcons = () => {
         }}
       >
         <FontAwesomeIcon icon={faSquareEnvelope} size="4x" />
-        <span className=" absolute z-[-10] top-14 left-12 right-0 bottom-0 flex items-center justify-center bg-white w-11 h-8">
+        <span className=" absolute z-[-10] top-10 left-8 md:top-14 md:left-12 right-0 bottom-0 flex items-center justify-center bg-white w-11 h-8  ">
         </span>
       </a>
     </div>
