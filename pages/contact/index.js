@@ -47,8 +47,8 @@ const SocialIcons = () => {
 
 
   return (
-  <div className="flex items-center justify-center min-h-screen ">
-    <div className="flex flex-wrap justify-center  space-x-4 md:space-x-10">
+  <div className="flex items-center justify-center min-h-screen  ">
+    <div className="flex flex-wrap justify-center  space-x-4 md:space-x-10 mb-20 md:mb-0">
       <a
         href="#"
         className="w-36 h-36 rounded-full flex items-center justify-center text-[#0066c8] 
