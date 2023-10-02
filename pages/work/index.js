@@ -4,6 +4,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from 'next/image';
 
+//framer motion
+import {motion} from 'framer-motion';
+import {fadeIn} from '../../variants';
+
 
 
 const workSlides = {
@@ -69,7 +73,12 @@ const WorkSlider = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center">
+    <motion.div
+    variants={fadeIn('right', 0.2)}
+  initial='hidden'
+   animate='show'
+    exit='hidden'
+     className="min-h-screen flex items-center justify-center">
       <div className="container mx-auto px-4">
         <Slider {...sliderSettings}>
           {workSlides.slides.map((slide, index) => (
@@ -105,7 +114,7 @@ const WorkSlider = () => {
           ))}
         </Slider>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

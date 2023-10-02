@@ -133,8 +133,9 @@ gap-x-6">
     exit="hidden"
     className="h2"
     >
-       Captivating <span className="text-accent">stories</span> birth
-        magnificent designs.
+        <span className="text-accent">Conoce </span>Mi Perfil.
+       
+
     </motion.h2>
     <motion.p
        variants={fadeIn('right',0.2)}
@@ -143,9 +144,7 @@ gap-x-6">
        exit="hidden"
      className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
      >
-      10 years ago,i began freelancing as a developer.Since then, I ve
-      dobe remote work for agencies, consulted for startups , and
-      collaborated on digital products for business and consumer use. 
+   dfsfsdfsdfd
       </motion.p>
         {/* counters */}
         <motion.div

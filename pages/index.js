@@ -27,8 +27,8 @@ const Home = () => {
       animate="show"
       exit="hidden"
     className="h1 mt-10">
-      Transformando ideas <br/> Into {' '}
-      <span className="text-accent">digital reality</span>
+      Ingeniero <br/> en {' '}
+      <span className="text-accent">software</span>
       </motion.h1> 
     {/*subtitle*/}
     <motion.p 
@@ -37,8 +37,12 @@ const Home = () => {
       animate="show"
       exit="hidden"
       className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 ">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-       incididunt ut labore et dolore magna aliqua
+    Soy un apasionado programador con amplia experiencia en el desarrollo
+     de software.Mi expertise abarca desde el desarrollo
+       web, aplicaciones móviles hasta la
+      producción de juegos 2D en Unity. Con habilidades en una
+       variedad de lenguajes, incluyendo C#, Java, Next.js, Tailwind, y 
+       Spring.
        </motion.p>
        {/* btn */}
        <div className="flex justify-center xl:hidden relative z-10">
