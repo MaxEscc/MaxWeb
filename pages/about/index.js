@@ -82,17 +82,14 @@ export const aboutData = [
     title: 'credentials',
     info: [
       {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
+        title: 'software engineer - Universida Estatal de sonora (Carrera a fin - en pausa)',
+        stage: '2022',
       },
       {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
+        title: 'Tecnico en Programacion - Centro de de bachillerato tecnológico industrial y de servicios #64',
+        stage: '2017',
       },
-      {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
-      },
+    
     ],
   },
 ];
