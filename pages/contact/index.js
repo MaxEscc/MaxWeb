@@ -46,10 +46,6 @@ const SocialIcons = () => {
     borderRadius: '50%', // Hacer que la box shadow sea redonda
   };
 
-
-
-
-
   return (
   <motion.div
   variants={fadeIn('up', 0.3)}
@@ -91,7 +87,7 @@ const SocialIcons = () => {
         href="#"
         className="w-32 h-32 md:w-36 md:h-36 rounded-full flex items-center justify-center text-[#000] 
         text-2.5xl transition duration-450 hover:text-black 
-        hover:bg-[#FFFF] md:mt-0 mt-41"
+        hover:bg-[#FFFF] md:mt-0 mt-36"
         style={{
           WebkitBoxReflect:
             ' below 5px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4))',

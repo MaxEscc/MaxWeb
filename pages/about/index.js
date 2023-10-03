@@ -6,15 +6,17 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaWordpress,
-  FaFigma,
+
+  FaJava,
+  FaPhp,
 } from "react-icons/fa";
 
 import {
   SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
+SiAdobepremierepro,
   SiAdobephotoshop,
+  SiCsharp
+  
 } from "react-icons/si";
 
 
@@ -31,16 +33,17 @@ export const aboutData = [
           <FaJs key="javascript" />,
           <FaReact key="react" />,
           <SiNextdotjs key="nextjs" />,
-          <SiFramer key="framer" />,
-          <FaWordpress key="wordpress" />,
+          <FaJava key="java" />,
+          <FaPhp key="ph" />,
+          <SiCsharp key="premier" />,
         ],
       },
       {
         title: 'UI/UX Design',
         icons: [
-          <FaFigma key="figma" />,
-          <SiAdobexd key="adobexd" />,
-          <SiAdobephotoshop key="photoshop" />,
+       
+          <SiAdobepremierepro key="premier" />,
+         
         ]
       },
     ],
@@ -62,16 +65,16 @@ export const aboutData = [
     title: 'experience',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'API Developer - Escape Tours',
+        stage: '2023 - 2023',
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
+        title: ' (POS) Developer - Pizza Shop',
+        stage: '2019 - 2020',
       },
       {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
+        title: 'Web Developer - academic project',
+        stage: '2020 -2021 ',
       },
     ],
   },
@@ -120,9 +123,10 @@ const About = () => {
    exit='hidden'
    className="hidden xl:flex absolute bottom-0 -left-[370px]"
    >
+    
     <Avatar />
 </motion.div>
-<div className="container mx-auto h-full flex flex-col items-center xl:flex-row 
+<div className="container mt-9 mx-auto h-full flex flex-col items-center xl:flex-row 
 gap-x-6">
   {/* text */}
   <div className="flex-1 flex flex-col justify-center">
@@ -144,7 +148,10 @@ gap-x-6">
        exit="hidden"
      className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
      >
-   dfsfsdfsdfd
+    Programador con amplia experiencia en el desarrollo
+     de software.Mi expertise abarca desde el desarrollo
+       web, aplicaciones móviles hasta la
+      producción de juegos 2D en Unity.
       </motion.p>
         {/* counters */}
         <motion.div
@@ -159,14 +166,15 @@ gap-x-6">
             <div className="relative flex-1 after:w-[1px] after:h-full
             after:bg-white/10 after:absolute after:top-0 after:right-0"> 
             <div className="text-2xl xl:text-4xñ font-extrabold text-accent mb-2">
-              <CountUp start={0} end={10} duration={5}/> +
+              <CountUp start={0} end={3} duration={0}/> +
             </div>
             <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-
             [100px]">
                Years of rxpirence</div>
             </div>
+            
             {/* clients */}
-            <div className="relative flex-1 after:w-[1px] after:h-full
+            {/*<div className="relative flex-1 after:w-[1px] after:h-full
             after:bg-white/10 after:absolute after:top-0 after:right-0"> 
             <div className="text-2xl xl:text-4xñ font-extrabold text-accent mb-2">
               <CountUp start={0} end={250} duration={5}/> +
@@ -175,16 +183,16 @@ gap-x-6">
             [100px]">
                clients satisfaccion
                </div>
-            </div>
+            </div>*/}
              {/* awardas */}
             <div className="relative flex-1 after:w-[1px] after:h-full
             after:bg-white/10 after:absolute after:top-0 after:right-0"> 
             <div className="text-2xl xl:text-4xñ font-extrabold text-accent mb-2">
-              <CountUp start={0} end={650} duration={5}/> +
+              <CountUp start={0} end={10} duration={2}/> +
             </div>
             <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-
             [100px]">
-               awards
+               courses
                </div>
             </div>
                   {/* projects */}

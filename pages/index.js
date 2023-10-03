@@ -37,12 +37,7 @@ const Home = () => {
       animate="show"
       exit="hidden"
       className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 ">
-    Soy un apasionado programador con amplia experiencia en el desarrollo
-     de software.Mi expertise abarca desde el desarrollo
-       web, aplicaciones móviles hasta la
-      producción de juegos 2D en Unity. Con habilidades en una
-       variedad de lenguajes, incluyendo C#, Java, Next.js, Tailwind, y 
-       Spring.
+    
        </motion.p>
        {/* btn */}
        <div className="flex justify-center xl:hidden relative z-10">
